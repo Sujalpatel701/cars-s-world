@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CAR'S WORLD</title>
+    <script src="https://kit.fontawesome.com/00f8fb6074.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">CAR'S WORLD</h1>
+            <form name="myform" onsubmit="return submitfunction()">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name" name="name" onfocus="focusevent(this)" onblur="onblurevent(this)">
+                    </div>
+                    <div class="input-field" id="cares">
+                        <i class="fa-solid fa-car"></i>
+                        <select name="cars" id="cars" class="sele" onfocus="focusevent(this)" onblur="onblurevent(this)"onchange="changefunction()">
+                            <option value="">CAR BRANDS</option>
+                            <option value="tesla/index.html" id="tesla">TESLA</option>
+                            <option value="porsche/index.html" id="porsche">PORSCHE</option>
+                            <option value="bmw/index.html" id="bmw">BMW</option>
+                            <option value="mercedes/index.html" id="mercedes">MERCEDES</option>
+                            <option value="audi/index.html" id="audi">AUDI</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="email" onfocus="focusevent(this)" onblur="onblurevent(this)">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="password" name="pass" onfocus="focusevent(this)" onblur="onblurevent(this)">
+                    </div>
+                    <p>Lost Password <a href="#">Click Here</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn" >Sign Up</button>
+                    <button type="submit" class="disable" id="signinBtn" >Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
